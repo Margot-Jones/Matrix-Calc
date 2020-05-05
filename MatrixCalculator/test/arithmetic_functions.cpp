@@ -1,7 +1,7 @@
 #include "arithmetic_functions.h"
 #include <malloc.h>
 
-void function_Addition(int** A_matrix, int** B_matrix, int** C_matrix, int size){
+void Add(int** A_matrix, int** B_matrix, int** C_matrix, int size){
 
     for(int i = 0; i < size; i++){
         for(int j = 0; j < size; j++){
@@ -10,7 +10,7 @@ void function_Addition(int** A_matrix, int** B_matrix, int** C_matrix, int size)
     }
 
 }
-void function_Difference(int** A_matrix, int** B_matrix, int** C_matrix, int size){
+void Dif(int** A_matrix, int** B_matrix, int** C_matrix, int size){
 
     for(int i = 0; i < size; i++){
         for(int j = 0; j < size; j++){
@@ -20,7 +20,7 @@ void function_Difference(int** A_matrix, int** B_matrix, int** C_matrix, int siz
 
 
 }
-void function_TransposeA(int** A_matrix, int** B_matrix, int** C_matrix, int size){
+void TransA(int** A_matrix, int** B_matrix, int** C_matrix, int size){
 
     for(int i = 0; i < size; i++){
         for(int j = 0; j < size; j++){
@@ -29,7 +29,7 @@ void function_TransposeA(int** A_matrix, int** B_matrix, int** C_matrix, int siz
     }
 
 }
-void function_TransposeB(int** A_matrix, int** B_matrix, int** C_matrix, int size){
+void TransB(int** A_matrix, int** B_matrix, int** C_matrix, int size){
 
     for(int i = 0; i < size; i++){
         for(int j = 0; j < size; j++){
@@ -38,7 +38,7 @@ void function_TransposeB(int** A_matrix, int** B_matrix, int** C_matrix, int siz
     }
 
 }
-void function_Multiplication(int** A_matrix, int** B_matrix, int** C_matrix, int size){
+void Mult(int** A_matrix, int** B_matrix, int** C_matrix, int size){
 
     int sum = 0;
     for(int i = 0; i < size; i++){
