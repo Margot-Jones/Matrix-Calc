@@ -253,7 +253,7 @@ void run(){
         drawAll_2(window);
         while (window.isOpen())
         {
-            Vector2i pos = Mouse::getPosition(window);       // получение координат при нажатии кнопок мышки
+            Vector2i pos = Mouse::getPosition(window);       // ГЇГ®Г«ГіГ·ГҐГ­ГЁГҐ ГЄГ®Г®Г°Г¤ГЁГ­Г ГІ ГЇГ°ГЁ Г­Г Г¦Г ГІГЁГЁ ГЄГ­Г®ГЇГ®ГЄ Г¬Г»ГёГЄГЁ
             int x = pos.x;
             int y = pos.y;
 
@@ -1512,7 +1512,7 @@ void handling_2(int size, RenderWindow& window){
     int gameOver = 1;
     int operation = 1;
     while (gameOver) {
-        Vector2i pos = Mouse::getPosition(window);       // получение координат при нажатии кнопок мышки
+        Vector2i pos = Mouse::getPosition(window);       // ГЇГ®Г«ГіГ·ГҐГ­ГЁГҐ ГЄГ®Г®Г°Г¤ГЁГ­Г ГІ ГЇГ°ГЁ Г­Г Г¦Г ГІГЁГЁ ГЄГ­Г®ГЇГ®ГЄ Г¬Г»ГёГЄГЁ
         int x = pos.x;
         int y = pos.y;
         Event event;
@@ -1967,7 +1967,7 @@ void handling_3(int size, RenderWindow& window){
     int gameOver = 1;
     int operation = 1;
     while (gameOver) {
-        Vector2i pos = Mouse::getPosition(window);       // получение координат при нажатии кнопок мышки
+        Vector2i pos = Mouse::getPosition(window);       // ГЇГ®Г«ГіГ·ГҐГ­ГЁГҐ ГЄГ®Г®Г°Г¤ГЁГ­Г ГІ ГЇГ°ГЁ Г­Г Г¦Г ГІГЁГЁ ГЄГ­Г®ГЇГ®ГЄ Г¬Г»ГёГЄГЁ
         int x = pos.x;
         int y = pos.y;
         Event event;
@@ -2939,7 +2939,7 @@ void handling_4(int size, RenderWindow& window){
     int gameOver = 1;
     int operation = 1;
     while (gameOver) {
-        Vector2i pos = Mouse::getPosition(window);       // получение координат при нажатии кнопок мышки
+        Vector2i pos = Mouse::getPosition(window);       // ГЇГ®Г«ГіГ·ГҐГ­ГЁГҐ ГЄГ®Г®Г°Г¤ГЁГ­Г ГІ ГЇГ°ГЁ Г­Г Г¦Г ГІГЁГЁ ГЄГ­Г®ГЇГ®ГЄ Г¬Г»ГёГЄГЁ
         int x = pos.x;
         int y = pos.y;
         Event event;
@@ -5280,11 +5280,11 @@ void B_deleteDigit16_4(RenderWindow& window){
 
 void getFinallResult(int option, int size){
     switch(option){
-        case 1: function_Addition(A_matrix, B_matrix, C_matrix, size);break;
-        case 2: function_Difference(A_matrix, B_matrix, C_matrix, size);break;
-        case 3: function_TransposeA(A_matrix, B_matrix, C_matrix, size);break;
-        case 4: function_TransposeB(A_matrix, B_matrix, C_matrix, size);break;
-        case 5: function_Multiplication(A_matrix, B_matrix, C_matrix, size);break;
-        default: printf("Цифри тільки 1 - 6");
+        case 1: Add(A_matrix, B_matrix, C_matrix, size);break;
+        case 2: Dif(A_matrix, B_matrix, C_matrix, size);break;
+        case 3: TransA(A_matrix, B_matrix, C_matrix, size);break;
+        case 4: TransB(A_matrix, B_matrix, C_matrix, size);break;
+        case 5: Mult(A_matrix, B_matrix, C_matrix, size);break;
+        default: printf("Г–ГЁГґГ°ГЁ ГІВіГ«ГјГЄГЁ 1 - 6");
     }
 }
